@@ -21,6 +21,7 @@ builder.Services.AddCors(options =>
         });
 });
 
+
 // DbContext Injection
 builder.Services.AddDbContext<ProductDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("constr")));
